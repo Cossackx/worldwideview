@@ -73,6 +73,15 @@ export function getProxiedStreamUrl(url: string): string {
     return `/api/camera/proxy/stream?url=${encodeURIComponent(url)}`;
 }
 
+/**
+ * Proxy iframe HTML to inject <base> tags and strip X-Frame-Options / CSP headers
+ * that prevent embedding.
+ */
+export function getProxiedIframeUrl(url: string): string {
+    if (!url) return url;
+    return `/api/camera/proxy/iframe?url=${encodeURIComponent(url)}`;
+}
+
 /** Return a user-friendly error message for a failed stream URL. */
 export function getStreamErrorMessage(streamUrl: string): string {
     if (
