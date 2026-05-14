@@ -208,6 +208,7 @@ Refer to these skill documents for specialized tasks:
 - **Workflow**: You **MUST** use the `/commit` workflow before every git commit to ensure proper semantic versioning bumps.
 - **Required Checks**: Ensure `pnpm test` and `pnpm build` complete successfully before proposing a merge.
 - **Review Process**: Use `/pr-review` to conduct a comprehensive multi-role review on any pull request.
+- **Git Worktrees**: We use [Worktrunk](https://github.com/max-sixty/worktrunk) to manage parallel branches and avoid relative path breakage in the monorepo. Use `git-wt switch --create <branch>` to provision isolated sibling worktrees automatically configured with `.env` files and `pnpm install`. Use `git-wt remove` to clean up.
 
 ---
 

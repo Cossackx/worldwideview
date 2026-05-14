@@ -88,3 +88,17 @@ model WorkspaceMember {
   @@unique([userId, workspaceId])
   @@map("workspace_members")
 }
+
+model MarketplaceCredential {
+  id         String   @id @default(uuid())
+  tenantId   String?
+  version    String
+  salt       String
+  nonce      String
+  ciphertext String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([tenantId])
+  @@map("marketplace_credentials")
+}

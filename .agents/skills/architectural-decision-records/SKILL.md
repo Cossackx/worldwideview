@@ -11,7 +11,8 @@ Trigger this skill whenever you are about to introduce a new architectural patte
 ## Guidelines
 1. **Never make a major architectural change without an ADR**.
 2. Store ADRs in `docs/architecture/decisions/` (create this directory if it doesn't exist).
-3. An ADR must follow this exact structure:
+3. Name ADR files using the pattern `adr-00##-name.md` (e.g., `adr-0001-use-postgresql.md`).
+4. An ADR must follow this exact structure:
    - **Title**: Short, descriptive noun phrase.
    - **Context**: What is the problem we are solving? What forces are at play? (Be objective).
    - **Decision**: What is the specific change or pattern we are adopting?

@@ -1,0 +1,5 @@
+[[pre-start]]
+install_deps = "pnpm install"
+
+[[pre-start]]
+copy_env = """powershell -Command "if (Test-Path '../worldwideview/.env') { Copy-Item '../worldwideview/.env' '.env' -Force }; if (Test-Path '../worldwideview/.env.local') { Copy-Item '../worldwideview/.env.local' '.env.local' -Force }""""
