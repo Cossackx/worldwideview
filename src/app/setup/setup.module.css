@@ -103,27 +103,3 @@
 .button:hover { opacity: 0.9; }
 .button:disabled { opacity: 0.5; cursor: not-allowed; }
 
-.legacyNotice {
-    margin: 1.5rem 0;
-    padding: 1rem;
-    background: rgba(255, 191, 0, 0.05);
-    border: 1px solid rgba(255, 191, 0, 0.3);
-    text-align: left;
-    font-size: 0.8rem;
-    color: #ffbf00;
-}
-
-.legacyNotice strong {
-    display: block;
-    margin-bottom: 0.4rem;
-}
-
-.legacyNotice code {
-    display: block;
-    margin-top: 0.75rem;
-    padding: 0.5rem;
-    background: #000;
-    color: #0f0;
-    font-family: 'JetBrains Mono', monospace;
-    word-break: break-all;
-}
