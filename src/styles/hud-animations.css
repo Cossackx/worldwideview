@@ -41,7 +41,7 @@
 /* ── Pre-boot: hide everything (only before boot completes) ── */
 .app-shell:not(.boot-done) .header,
 .app-shell:not(.boot-done) .sidebar,
-.app-shell:not(.boot-done) .timeline,
+.app-shell:not(.boot-done) .bottom-panel-system,
 .app-shell:not(.boot-done) .panel-toggle-btn,
 .app-shell:not(.boot-done) .camera-stats,
 .app-shell:not(.boot-done) .entity-info-card,
@@ -91,7 +91,7 @@
 }
 
 /* ── Timeline ─────────────────────────────────────────────── */
-.app-shell.boot-timeline .timeline {
+.app-shell.boot-timeline .bottom-panel-system {
     animation: hudRiseUp 600ms var(--ease-smooth) both;
 }
 

@@ -17,6 +17,12 @@ export default defineConfig({
             'src/app/**/*.{test,spec}.{js,ts,jsx,tsx}',
             'packages/**/*.{test,spec}.{js,ts,jsx,tsx}',
         ],
+        exclude: [
+            '**/node_modules/**',
+            '**/dist/**',
+            '**/.next/**',
+            '**/.git/**',
+        ],
         coverage: {
             thresholds: {
                 branches: 80,

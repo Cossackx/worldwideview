@@ -5,7 +5,6 @@ import { useStore } from "@/core/state/store";
 import { pluginManager } from "@/core/plugins/PluginManager";
 import { Timeline } from "@/components/timeline/Timeline";
 import { PluginErrorBoundary } from "@/components/common/PluginErrorBoundary";
-import "./BottomPanelManager.css";
 
 export function BottomPanelManager() {
     const activeBottomPanel = useStore((s) => s.activeBottomPanel);

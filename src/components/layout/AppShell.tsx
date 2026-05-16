@@ -23,7 +23,7 @@ import { dataBus } from "@/core/data/DataBus";
 import { PanelToggleArrows } from "@/components/layout/PanelToggleArrows";
 import { FloatingVideoManager } from "@/components/video/FloatingVideoManager";
 import { BootOverlay } from "@/components/common/BootOverlay";
-import { Timeline } from "@/components/timeline/Timeline";
+
 import { useBootSequence } from "@/core/hooks/useBootSequence";
 import { useIsMobile } from "@/core/hooks/useIsMobile";
 import { useMarketplaceSync } from "@/core/hooks/useMarketplaceSync";
@@ -189,7 +189,7 @@ export function AppShell() {
         <DataConfigPanel />
         {!isMobile && <CameraStatsPanel />}
         <EntityInfoCard />
-        <Timeline />
+        <BottomPanelManager />
         <FloatingVideoManager />
         {needsReload && <ReloadToast />}
         <ErrorToast />
